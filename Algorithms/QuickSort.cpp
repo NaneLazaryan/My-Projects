@@ -28,6 +28,7 @@ void QuickSort(std::vector<T>& A, size_t p, size_t r) {
 }
 
 int main() {
+	// Test for int type
 	std::vector<int> vec1 = { 5,2,10,9,65,13,1 };
 	std::cout << "Vector before Quick Sort." << std::endl;
 	for (const int& i : vec1) {
@@ -42,6 +43,7 @@ int main() {
 	}
 	std::cout << std::endl;
 
+	// Test for double type
 	std::vector<double> vec2 = { 5.2,0,1.3,6.5 };
 	std::cout << "\nVector before Quick Sort." << std::endl;
 	for (const double& i : vec2) {
