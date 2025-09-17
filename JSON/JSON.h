@@ -19,9 +19,6 @@ namespace JSON {
 			JsonArray,
 			std::string,
 			std::nullptr_t
-			/*bool,
-			double,
-			int*/
 		>;
 
 	private:
