@@ -416,7 +416,7 @@ std::ostream& JsonValue::print_object(std::ostream& os, const JsonObject& obj) {
 
 std::ostream& JSON::operator<<(std::ostream& os, const JsonValue& js) {
 	std::visit([&os](auto&& arg) {
-		using T = std::decay_t<decltype(arg)>;  // // remove const, &, ... without copy
+		using T = std::decay_t<decltype(arg)>;  // remove const, &, ... without copy
 		if constexpr (std::is_same_v<T, std::string>) {
 			if (arg == "true" || arg == "false") os << arg;
 			else {
